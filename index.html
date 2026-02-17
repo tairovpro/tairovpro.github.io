@@ -1,10 +1,359 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>My GitHub Pages Site</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mukhammed — Computer Science student portfolio: projects, leadership, and experience." />
+  <title>Mukhammed | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my GitHub Pages site.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span>Mukhammed</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <span class="icon" aria-hidden="true">☀︎</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" title="Menu">
+          <span class="icon" aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container mobile-menu" id="mobileMenu" hidden>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science @ IUP • Business minor • TechWise cohort</p>
+          <h1>
+            I build practical software,
+            lead student communities,
+            and communicate clearly.
+          </h1>
+          <p class="subhead">
+            I’m a CS student focused on web apps, APIs, and real-world problem solving — with strong leadership,
+            public speaking, and an entrepreneurial background.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn" href="assets/Mukhammed_Mamatysaev_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+          </div>
+
+          <div class="link-row">
+            <!-- Replace the # with your real links -->
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="link" href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="link" href="mailto:youremail@example.com">youremail@example.com</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat">
+              <p class="stat-k">Focus</p>
+              <p class="stat-v">Python • Web apps • APIs</p>
+            </div>
+            <div class="stat">
+              <p class="stat-k">Strengths</p>
+              <p class="stat-v">Leadership • Public speaking • Teamwork</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="photo-wrap">
+            <!-- PUT YOUR PHOTO HERE -->
+            <img src="assets/img/headshot.jpg" alt="Mukhammed headshot" loading="lazy" />
+          </div>
+
+          <div class="hero-card-body">
+            <h2>About me</h2>
+            <p>
+              I’m Mukhammed, a CS major at Indiana University of Pennsylvania.
+              I enjoy building products that help people learn, connect, and get things done.
+              I’m also active in student orgs and public speaking — I like explaining technical ideas in a simple way.
+            </p>
+
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">Flask</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Git/GitHub</span>
+              <span class="badge">Public Speaking</span>
+              <span class="badge">Multilingual</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured projects</h2>
+          <p>Real projects with clear goals, useful features, and clean structure.</p>
+        </div>
+
+        <div class="grid cards">
+          <!-- PROJECT 1 -->
+          <article class="card">
+            <div class="card-media">
+              <!-- PUT PROJECT SCREENSHOT HERE -->
+              <img src="assets/img/wordwise.png" alt="WordWise screenshot" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>WordWise — Quiz Web App</h3>
+              <p class="muted">
+                Multi-category quiz platform (vocabulary, grammar, antonyms) with scoring and clean UX.
+              </p>
+
+              <ul class="bullets">
+                <li>Python + Flask routing with modular structure</li>
+                <li>One-question-per-page flow + final score summary</li>
+                <li>Expandable categories and question banks</li>
+              </ul>
+
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live demo</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">GitHub repo</a>
+              </div>
+
+              <p class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">HTML/CSS</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="assets/img/country-info.png" alt="Country Info Explorer screenshot" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Country Info Explorer</h3>
+              <p class="muted">
+                API-driven app to search countries and display key stats with strong error handling.
+              </p>
+
+              <ul class="bullets">
+                <li>Search + clean results UI</li>
+                <li>Resilient handling for missing fields</li>
+                <li>Great practice for working with real APIs</li>
+              </ul>
+
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live demo</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">GitHub repo</a>
+              </div>
+
+              <p class="tags">
+                <span class="tag">APIs</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+              </p>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="assets/img/tetris.png" alt="Tetris project screenshot" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Tetris Case Study</h3>
+              <p class="muted">
+                Game logic project focused on correctness, edge cases, and clean state handling.
+              </p>
+
+              <ul class="bullets">
+                <li>Full-size board, random pieces, scoring, game-over</li>
+                <li>Automatic stepping with pause control</li>
+                <li>Emphasis on testing and reliability</li>
+              </ul>
+
+              <div class="card-actions">
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">GitHub repo</a>
+              </div>
+
+              <p class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Problem Solving</span>
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <p>
+            Tip: project screenshots instantly upgrade your portfolio. Use: app home screen, a key feature, and final result.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section alt" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Technical work + real-world responsibility.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3>E-commerce Resale (Auto Parts) — Operator</h3>
+              <p class="muted">eBay listings • pricing • fulfillment • customer support</p>
+              <ul class="bullets">
+                <li>Optimized listings (titles, photos, keywords) to improve conversion</li>
+                <li>Handled inventory and shipping workflow with consistency</li>
+                <li>Learned the business side: margin, demand, negotiation, and trust</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3>TechWise / TalentSprint — Cohort Participant</h3>
+              <p class="muted">Software engineering fundamentals • mentorship • presentations</p>
+              <ul class="bullets">
+                <li>Built structured projects and improved coding discipline</li>
+                <li>Practiced technical storytelling and presenting to peers</li>
+                <li>Worked with Git/GitHub and collaborative workflows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="section-head">
+          <h2>Leadership & campus involvement</h2>
+          <p>I like building communities where people grow faster together.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="panel">
+            <h3>Computer Club — Founder / President</h3>
+            <p class="muted">
+              Created a peer-driven environment for learning, tutoring, and project building.
+            </p>
+            <ul class="bullets">
+              <li>Helped students practice coding and problem solving</li>
+              <li>Encouraged underrepresented students to participate</li>
+              <li>Organized meetings, sessions, and learning activities</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Public Speaking — Toastmasters / “Speak to Impress”</h3>
+            <p class="muted">
+              Strong communication is a superpower — especially in tech.
+            </p>
+            <ul class="bullets">
+              <li>Improved clarity, confidence, and structured speaking</li>
+              <li>Comfortable presenting technical topics to mixed audiences</li>
+              <li>Can explain complex ideas simply and respectfully</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Tools I use to build and ship.</p>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-box">
+            <h3>Languages</h3>
+            <p class="muted">Python, Java, JavaScript, SQL, HTML/CSS, MIPS</p>
+          </div>
+          <div class="skill-box">
+            <h3>Frameworks & Tools</h3>
+            <p class="muted">Flask, Git/GitHub, REST APIs, VS Code, Linux/macOS</p>
+          </div>
+          <div class="skill-box">
+            <h3>Strengths</h3>
+            <p class="muted">Leadership, public speaking, teamwork, technical writing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Want to collaborate or chat? Reach me fast.</p>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <h3>Let’s talk</h3>
+            <p class="muted">
+              Email is best. You can also add your LinkedIn and GitHub links in the hero section.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:youremail@example.com">Email me</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p class="muted">© <span id="year"></span> Mukhammed. Built with GitHub Pages.</p>
+      <a class="muted link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
